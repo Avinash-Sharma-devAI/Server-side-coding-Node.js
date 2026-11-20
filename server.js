@@ -4,7 +4,7 @@ const http=require("http");
 const fs=require("fs");
 
 const server=http.createServer((req,res)=>{
-    const data=fs.readFileSync("index.html");
+    const data=fs.readFileSync("sample2.html");
     // here comes the request and response handling logic
     res.end(data);
 });
