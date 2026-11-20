@@ -1,10 +1,12 @@
 //create a server using node.js 
 
 const http=require("http");
+const fs=require("fs");
 
 const server=http.createServer((req,res)=>{
+    const data=fs.readFileSync("index.html");
     // here comes the request and response handling logic
-    res.end("response from my first server- welcome to node.js server");
+    res.end(data);
 });
 
 server.listen(3100, ()=>{
