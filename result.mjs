@@ -5,3 +5,7 @@ import {sum} from "./module.mjs"; // here we are importing only the "sum" functi
 //const result=arithmeticModule.sum(10,20); // here "add" though written as a function, is a property of the object "arithmeticModule" which is exported from module.js file.
 const result=sum(10,20); // here "sum" is a function which is imported from module.js file and we are calling it with arguments 10 and 20. The result of the function call is stored in the variable "result".
 console.log(result);
+
+
+// why .mjs? 
+// .mjs extension is used to indicate that the file is a JavaScript module and should be treated as such. This is necessary when using ES6 module syntax (import/export) instead of CommonJS syntax (require/module.exports).
