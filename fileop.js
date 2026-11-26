@@ -25,4 +25,10 @@ try{
     console.log("Error in appending to the file", err);
 }
 
+//delete a file using blocking code
 
+try{
+    fs.unlinkSync("employee.txt");
+} catch(err){
+    console.log("Error in deleting the file", err);
+}
