@@ -10,7 +10,7 @@ const interface=readLine.createInterface({input: process.stdin, output: process.
 interface.question("Enter the first number:",(num1)=>{
     interface.question("Enter the second number:",(num2)=>{
 
-        sum=parseInt(num1)+parseInt(num2);
+        const sum=parseInt(num1)+parseInt(num2);
         console.log(`The sum of ${num1} and ${num2} is ${sum}`);
     });
 })
