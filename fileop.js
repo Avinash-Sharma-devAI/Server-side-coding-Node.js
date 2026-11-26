@@ -28,7 +28,7 @@ try{
 //delete a file using blocking code
 
 try{
-    fs.unlinkSync("employee.txt");
+    fs.unlinkSync("dididid.txt");
 } catch(err){
     console.log("Error in deleting the file", err);
 }
