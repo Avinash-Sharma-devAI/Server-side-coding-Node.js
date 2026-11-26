@@ -16,3 +16,13 @@ try{
     console.log("Error in writing the file", err);
 }
 
+
+//append another data into the file using blocking code
+
+try{
+    fs.appendFileSync("employee.txt", " and he is a senior software engineer");
+} catch(err){
+    console.log("Error in appending to the file", err);
+}
+
+
